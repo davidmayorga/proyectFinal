@@ -25,10 +25,9 @@ if ($conn->query($sql) === TRUE) {
     // Redireccionar al usuario a la página secundaria
     header("Location: pagina2.html");
     exit();
-  } else {
+} else {
     echo "Error: " . $sql . "<br>" . $conn->error;
-  }
-  
+}
 
 $conn->close();
 ?>
